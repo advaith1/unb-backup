@@ -1,0 +1,88 @@
+code {
+    color: #bd4147;
+    background-color: #f7f7f9;
+}
+
+.navbar {
+    background-color: #f7f7f7;
+}
+
+.navbar-brand {
+    color: rgba(0, 0, 0, .9);
+}
+
+a {
+    color: rgba(0, 0, 0, .5);
+}
+
+a:focus {
+    color: rgba(0, 0, 0, .9);
+}
+
+a:hover {
+    color: rgba(0, 0, 0, .9);
+}
+
+.active {
+    color: rgba(0, 0, 0, .9);
+}
+
+.config-icon {
+    content: url(../media/config-light.svg);
+}
+
+.table-bordered {
+    border-color: #dcdcdc;
+}
+
+.table-header {
+    background-color: #f7f7f9;
+}
+
+.img-thumbnail {
+    background-color: #fff;
+    border-color: #ddd
+}
+
+.pagination .page-link {
+    background-color: #f7f7f7;
+    color: rgba(0, 0, 0, .5);
+}
+
+.leaderboard .table > tbody > tr > td {
+    background-color: #f3f3f3;
+    border-color: #949494;
+}
+
+.back-arrow {
+    content: url(../media/back-light.svg);
+}
+
+.row.profile.header {
+    background-color: #bdbdbd;
+}
+
+.row.profile.body {
+    background-color: #f3f3f3;
+}
+
+.card-header.leaderboard {
+    background-color: #bdbdbd;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+    background: #f7f7f7;
+    border: 1pt solid #343434;
+    color: #000000;
+}
+
+.btn.donate {
+    background-color: #f7f7f7;
+    color: black;
+    border: 1pt solid black;
+}
+
+.bd-callout {
+    background-color: #f7f7f7;
+    border-color: #949494;
+}
