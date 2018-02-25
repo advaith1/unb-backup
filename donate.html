@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="UnbelievaBoat is a powerful, easy to use Discord Bot!">
+<meta name="keywords" content="discord bot,discord app,unbelievable bot,unbelievaboat, bot, discord, economy, money, unb, unb bot">
+<meta name="author" content="unbelievable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="nOBeKQOr1qBZIDu95DV4IXV5DFBl2w0eFABEOyQrq2s" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/default.css">
+<link rel="stylesheet" href="/css/dark-theme.css" id="theme_stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md fixed-top">
+<a class="navbar-brand" href="/">
+<img src="https://cdn.discordapp.com/avatars/292953664492929025/8951dae4df1ff9771be538065b3ea8ed.png?size&#x3D;128" width="30" height="30" class="d-inline-block align-top" alt="">
+UnbelievaBoat
+</a>
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div id="navbarNavDropdown" class="navbar-collapse collapse">
+<ul class="navbar-nav mr-auto">
+<a class="nav-link" href="/">Home</a>
+<a class="nav-link" href="/commands">Commands</a>
+<a class="nav-link" href="/tags">Tags</a>
+<a class="nav-link" href="/faq">FAQ</a>
+<a class="nav-link active" href="/donate">Donate</a>
+<a class="nav-link" href="/stats">Stats</a>
+</ul>
+<ul class="navbar-nav">
+<a class="nav-link" target="_top" href="/invite">Invite Bot</a>
+<a class="nav-link" target="_parent" href="/support">Support Server</a>
+<a class="nav-link hidden-md-down" id="lightswitch">
+<img src="/media/moon.svg" style="width: 18px;" id="lightswitch_image">
+</a>
+</ul>
+</div>
+</nav>
+<br>
+<br>
+<title>UnbelievaBoat - Donate</title>
+<br>
+<div class="container" style="text-align: center">
+<img class="discord-icon large" src="https://cdn.discordapp.com/avatars/292953664492929025/8951dae4df1ff9771be538065b3ea8ed.png?size&#x3D;128">
+<br>
+<br>
+<p class="lead">UnbelievaBoat is supported entirely by donations from the Discord community.</p>
+<p class="lead">By donating, you'll receive perks based on your contribution.</p>
+<br>
+<h3>Donation perk levels</h3>
+<table class="table table-hover">
+<tr class="row">
+<td class="col-md-3">&pound;2+ GBP &nbsp;[&dollar;2+ USD]
+</td>
+<td class="col-md-9" style="text-align: left">You will receive the Donator role in the
+<a href="/support">official server</a>.
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-3">&pound;5+ GBP &nbsp;[&dollar;7+ USD]</td>
+<td class="col-md-9" style="text-align: left">You'll be able to add the donator only version of the bot,
+this has music commands and better performance & uptime.<br>
+Perks of the donator only bot include:<br>
+<ul>
+<li>High quality music and radio functionality.<br>Play music or streams from YouTube, Bandcamp,
+SoundCloud, Twitch, Vimeo, Mixer, other music URLs
+</li>
+<li>
+Better performance.
+</li>
+<li>
+Better uptime.
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-3">&pound;10+ GBP &nbsp;[&dollar;14+ USD]</td>
+<td class="col-md-9" style="text-align: left">You will receive the Super Donator role in the
+<a href="/support">official server</a>.
+</td>
+</tr>
+</table>
+<br>
+<br>
+<h3>Donate</h3>
+<br>
+<div class="donate-slider" style="width: 40%; margin: 0 auto;">
+<div class="col-sm-12">
+<div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0;">
+&lt; &pound;2 &gt;
+</a>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div>
+<form id="donate-button" action="https://paypal.me/UnbBot/2">
+<input id="donate-input" type="submit" class="btn donate" value="Donate &pound;2">
+<br>
+<br>
+<small>
+Note: Please don't select the paying for goods/service option - all it does is send me your address, and
+PayPal takes a chunk out.
+</small>
+</form>
+</div>
+<br>
+<br>
+<br>
+<h3>Receiving your perks for donating</h3>
+<p style="line-height: 25px;">
+To receive your perks the donation has to be linked to your Discord account.<br>
+To do this use the <code>verify-donation</code> command with the transaction ID in the bots DMs (direct
+messages).<br>
+Your transaction ID can be found in the email confirmation from PayPal, or payment history.<br>
+Example: <code>!verify-donation 36C38912MN9658832</code>
+<br>
+<br>
+Add the donator bot to your server with this link: <br><a href="/invite-donator">https://unbelievable.pizza/invite-donator</a>
+</p>
+</div>
+<script>
+    $(document).ready(() => {
+        $("#slider").slider({
+            animate: true,
+            value: 0,
+            min: 0,
+            max: 6,
+            step: 1,
+            slide: function (event, ui) {
+                update(1, ui.value); //changed
+            }
+        });
+
+        update(1, 0);
+    });
+
+    function update(slider, value) {
+        const levels = [2, 5, 10, 15, 20, 50, 100];
+        $('#slider a').html(`&lt; &pound;${levels[value]} &gt;`);
+        $('#donate-input').attr('value', `Donate £${levels[value]}`);
+        $('#donate-button').attr('action', `https://paypal.me/UnbBot/${levels[value]}`)
+    }
+</script>
+
+<script>
+
+    function applyTheme(theme) {
+        let light = "/css/light-theme.css";
+        let dark = "/css/dark-theme.css";
+        let moon = "/media/moon.svg";
+        let sun = "/media/sun.svg";
+
+        let cssFile = theme === "dark" ? dark : light;
+        let imageFile = theme === "dark" ? sun : moon;
+
+        let links = document.getElementsByTagName("link");
+        let link;
+        for (let i = 0; i < links.length; i++) {
+
+            if (links[i].id === "theme_stylesheet") {
+                link = links[i];
+                break;
+            }
+
+
+        }
+
+        if (link) {
+            let newLink = document.createElement("link");
+            newLink.setAttribute("rel", "stylesheet");
+            newLink.setAttribute("href", cssFile);
+            newLink.setAttribute("id", "theme_stylesheet");
+
+            switchIcon(imageFile);
+
+            link.parentNode.replaceChild(newLink, link);
+        }
+    }
+
+    function switchIcon(src) {
+        document.getElementById("lightswitch_image").src = src;
+    }
+
+    function switchTheme() {
+        try {
+            if (localStorage && localStorage.getItem("theme")) {
+                if (localStorage.getItem("theme") === "dark") {
+                    applyTheme("light");
+                    localStorage.setItem("theme", "light");
+                    return;
+                }
+            }
+        } catch (e) {
+        }
+
+        applyTheme("dark");
+        try {
+            if (localStorage) {
+                localStorage.setItem("theme", "dark");
+            }
+        } catch (e) {
+        }
+
+    }
+
+    function initiate() {
+        //  Check local storage for a saved theme
+        try {
+            if (localStorage && localStorage.getItem("theme")) {
+                applyTheme(localStorage.getItem("theme"));
+            } else {
+                applyTheme('dark');
+            }
+        } catch (e) {
+        }
+
+        //  Add listener
+        document.getElementById("lightswitch").addEventListener("click", switchTheme);
+    }
+
+    initiate();
+</script>
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5CCNXD"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109024028-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109024028-1');
+</script>
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
