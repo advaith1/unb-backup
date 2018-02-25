@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="UnbelievaBoat is a powerful, easy to use Discord Bot!">
+<meta name="keywords" content="discord bot,discord app,unbelievable bot,unbelievaboat, bot, discord, economy, money, unb, unb bot">
+<meta name="author" content="unbelievable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="nOBeKQOr1qBZIDu95DV4IXV5DFBl2w0eFABEOyQrq2s" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/default.css">
+<link rel="stylesheet" href="/css/dark-theme.css" id="theme_stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md fixed-top">
+<a class="navbar-brand" href="/">
+<img src="https://cdn.discordapp.com/avatars/292953664492929025/8951dae4df1ff9771be538065b3ea8ed.png?size&#x3D;128" width="30" height="30" class="d-inline-block align-top" alt="">
+UnbelievaBoat
+</a>
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div id="navbarNavDropdown" class="navbar-collapse collapse">
+<ul class="navbar-nav mr-auto">
+<a class="nav-link" href="/">Home</a>
+<a class="nav-link" href="/commands">Commands</a>
+<a class="nav-link active" href="/tags">Tags</a>
+<a class="nav-link" href="/faq">FAQ</a>
+<a class="nav-link" href="/donate">Donate</a>
+<a class="nav-link" href="/stats">Stats</a>
+</ul>
+<ul class="navbar-nav">
+<a class="nav-link" target="_top" href="/invite">Invite Bot</a>
+<a class="nav-link" target="_parent" href="/support">Support Server</a>
+<a class="nav-link hidden-md-down" id="lightswitch">
+<img src="/media/moon.svg" style="width: 18px;" id="lightswitch_image">
+</a>
+</ul>
+</div>
+</nav>
+<br>
+<br>
+<title>UnbelievaBoat - Tags</title>
+<br>
+<div class="pl-1 pl-sm-4 pr-1 pr-sm-4 container">
+<table class="table table-hover table-bordered">
+<thead>
+<tr class="table-header">
+<td style="border: none; padding-bottom: 0">
+<p style="font-size: 1.25rem; font-weight: 500;">
+Member
+</p>
+</td>
+<td style="border: none;">
+Usage (type this exactly as shown)
+</td>
+<td style="border: none;">
+Example
+</td>
+</tr>
+</thead>
+<tr>
+<td>ID</td>
+<td><code>{member.id}</code></td>
+<td>292953664492929025</td>
+</tr>
+<tr>
+<td>Username</td>
+<td><code>{member.username}</code></td>
+<td>UnbelievaBoat</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td><code>{member.tag}</code></td>
+<td>UnbelievaBoat#1046</td>
+</tr>
+<tr>
+<td>Mention</td>
+<td><code>{member.mention}</code></td>
+<td>@UnbelievaBoat#1046</td>
+</tr>
+<tr>
+<td>Created At</td>
+<td><code>{member.created}</code></td>
+<td>
+<script>document.write(new Date().toLocaleDateString('en-GB'));</script>
+<noscript>27/04/2018</noscript>
+</td>
+</tr>
+<tr>
+<td>Created Duration</td>
+<td><code>{member.created.duration}</code></td>
+<td>1 month and 2 weeks</td>
+</tr>
+<tr>
+<td>Joined At</td>
+<td><code>{member.joined}</code></td>
+<td>
+<script>document.write(new Date().toLocaleDateString('en-GB'));</script>
+<noscript>27/04/2018</noscript>
+</td>
+</tr>
+<tr>
+<td>Joined Duration</td>
+<td><code>{member.joined.duration}</code></td>
+<td>1 month and 2 weeks</td>
+</tr>
+</table>
+<br>
+<table class="table table-hover table-bordered">
+<thead>
+<tr class="table-header">
+<td style="border: none; padding-bottom: 0">
+<p style="font-size: 1.25rem; font-weight: 500;">
+Server
+</p>
+</td>
+<td style="border: none;">
+Usage (type this exactly as shown)
+</td>
+<td style="border: none;">
+Example
+</td>
+</tr>
+</thead>
+<tr>
+<td>ID</td>
+<td><code>{server.id}</code></td>
+<td>305129477627969547</td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>{server.name}</code></td>
+<td>🍕 UnbelievaBoat 🍕</td>
+</tr>
+<tr>
+<td>Member Count</td>
+<td><code>{server.members}</code></td>
+<td>1,027</td>
+</tr>
+<tr>
+<td>Created At</td>
+<td><code>{server.created}</code></td>
+<td>
+<script>document.write(new Date().toLocaleDateString('en-GB'));</script>
+<noscript>27/04/2018</noscript>
+</td>
+</tr>
+<tr>
+<td>Created Duration</td>
+<td><code>{server.created.duration}</code></td>
+<td>1 month and 2 weeks</td>
+</tr>
+</table>
+<br>
+<table class="table table-hover table-bordered">
+<thead>
+<tr class="table-header">
+<td style="border: none; padding-bottom: 0">
+<p style="font-size: 1.25rem; font-weight: 500;">
+Role
+</p>
+</td>
+<td style="border: none;">
+Usage (type this exactly as shown)
+</td>
+<td style="border: none;">
+Example
+</td>
+</tr>
+</thead>
+<tr>
+<td>ID</td>
+<td><code>{role.id}</code></td>
+<td>316817177300959232</td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>{role.name}</code></td>
+<td>Moderator</td>
+</tr>
+<tr>
+<td>Mention</td>
+<td><code>{role.mention}</code></td>
+<td>@Moderator</td>
+</tr>
+<tr>
+<td>Member Count</td>
+<td><code>{role.members}</code></td>
+<td>7</td>
+</tr>
+<tr>
+<td>Created At</td>
+<td><code>{role.created}</code></td>
+<td>
+<script>document.write(new Date().toLocaleDateString('en-GB'));</script>
+<noscript>27/04/2018</noscript>
+</td>
+</tr>
+<tr>
+<td>Created Duration</td>
+<td><code>{role.created.duration}</code></td>
+<td>1 month and 2 weeks</td>
+</tr>
+</table>
+</div>
+
+<script>
+
+    function applyTheme(theme) {
+        let light = "/css/light-theme.css";
+        let dark = "/css/dark-theme.css";
+        let moon = "/media/moon.svg";
+        let sun = "/media/sun.svg";
+
+        let cssFile = theme === "dark" ? dark : light;
+        let imageFile = theme === "dark" ? sun : moon;
+
+        let links = document.getElementsByTagName("link");
+        let link;
+        for (let i = 0; i < links.length; i++) {
+
+            if (links[i].id === "theme_stylesheet") {
+                link = links[i];
+                break;
+            }
+
+
+        }
+
+        if (link) {
+            let newLink = document.createElement("link");
+            newLink.setAttribute("rel", "stylesheet");
+            newLink.setAttribute("href", cssFile);
+            newLink.setAttribute("id", "theme_stylesheet");
+
+            switchIcon(imageFile);
+
+            link.parentNode.replaceChild(newLink, link);
+        }
+    }
+
+    function switchIcon(src) {
+        document.getElementById("lightswitch_image").src = src;
+    }
+
+    function switchTheme() {
+        try {
+            if (localStorage && localStorage.getItem("theme")) {
+                if (localStorage.getItem("theme") === "dark") {
+                    applyTheme("light");
+                    localStorage.setItem("theme", "light");
+                    return;
+                }
+            }
+        } catch (e) {
+        }
+
+        applyTheme("dark");
+        try {
+            if (localStorage) {
+                localStorage.setItem("theme", "dark");
+            }
+        } catch (e) {
+        }
+
+    }
+
+    function initiate() {
+        //  Check local storage for a saved theme
+        try {
+            if (localStorage && localStorage.getItem("theme")) {
+                applyTheme(localStorage.getItem("theme"));
+            } else {
+                applyTheme('dark');
+            }
+        } catch (e) {
+        }
+
+        //  Add listener
+        document.getElementById("lightswitch").addEventListener("click", switchTheme);
+    }
+
+    initiate();
+</script>
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5CCNXD"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109024028-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109024028-1');
+</script>
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
