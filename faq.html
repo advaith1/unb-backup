@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="UnbelievaBoat is a powerful, easy to use Discord Bot!">
+<meta name="keywords" content="discord bot,discord app,unbelievable bot,unbelievaboat, bot, discord, economy, money, unb, unb bot">
+<meta name="author" content="unbelievable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="nOBeKQOr1qBZIDu95DV4IXV5DFBl2w0eFABEOyQrq2s" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/default.css">
+<link rel="stylesheet" href="/css/dark-theme.css" id="theme_stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md fixed-top">
+<a class="navbar-brand" href="/">
+<img src="https://cdn.discordapp.com/avatars/292953664492929025/8951dae4df1ff9771be538065b3ea8ed.png?size&#x3D;128" width="30" height="30" class="d-inline-block align-top" alt="">
+UnbelievaBoat
+</a>
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div id="navbarNavDropdown" class="navbar-collapse collapse">
+<ul class="navbar-nav mr-auto">
+<a class="nav-link" href="/">Home</a>
+<a class="nav-link" href="/commands">Commands</a>
+<a class="nav-link" href="/tags">Tags</a>
+<a class="nav-link active" href="/faq">FAQ</a>
+<a class="nav-link" href="/donate">Donate</a>
+<a class="nav-link" href="/stats">Stats</a>
+</ul>
+<ul class="navbar-nav">
+<a class="nav-link" target="_top" href="/invite">Invite Bot</a>
+<a class="nav-link" target="_parent" href="/support">Support Server</a>
+<a class="nav-link hidden-md-down" id="lightswitch">
+<img src="/media/moon.svg" style="width: 18px;" id="lightswitch_image">
+</a>
+</ul>
+</div>
+</nav>
+<br>
+<br>
+<title>UnbelievaBoat - FAQ</title>
+<br>
+<div class="container-fluid pl-2 pl-sm-4 pr-2 pr-sm-4">
+<h3 class="text-center">Frequently Asked Questions</h3>
+<br>
+<div class="card" id="commands">
+<div class="card-header">
+Commands are not working
+</div>
+<div class="card-body">
+<ol style="padding-left: 20px">
+<li>
+Check the bot has the sufficient permissions in the channel you are trying to use it.
+<br>
+It requires at least Read and Send Messages.
+<br>
+Make sure to check channel permissions, and any other roles the bot has.
+</li>
+<br>
+<li>
+Check the command or module isn't disabled.<br>
+You can use the <code>test</code> command, in the Permissions module, to find out what has been
+disabled to prevent the command from working.
+</li>
+<br>
+<li>
+Check if mentioning the bot works, instead of using the prefix.
+E.g. <code>@UnbelievaBoat#1046 ping</code>
+</li>
+<br>
+<li>
+Are you typing the command correctly? View the <a href="/commands">command list</a> to check the
+usage.
+</li>
+</ol>
+</div>
+</div>
+<br>
+<div class="card" id="prefix">
+<div class="card-header">
+How can I change the prefix from !
+</div>
+<div class="card-body">
+Use the <code>prefix</code> command.
+<br><br>
+<img src="/media/faq/changing_prefix.png" class="img-thumbnail" onclick="window.open(this.src)">
+</div>
+</div>
+<br>
+<div class="card" id="muted-role">
+<div class="card-header">
+How do I create a Muted role to use with the <code>mute</code> command?
+</div>
+<div class="card-body">
+Use the command <code>muted-role create</code>.<br>
+This will create a role in your server called Muted, and sets the permissions for Send Messages and Add
+Reactions to <img class="checkmark" src="/media/xmark.png">.
+<br>
+Ensure other roles the member has <u>doesn't</u> have these channel permissions set to
+<img class="checkmark" src="/media/check.png">.
+<br><br>
+<img src="/media/faq/muted_channel_perms.png" class="img-thumbnail" onclick="window.open(this.src)">
+</div>
+</div>
+<br>
+<div class="card" id="permissions">
+<div class="card-header">
+How do I prevent the bot being used in certain channels?
+</div>
+<div class="card-body">
+If you want to prevent just a single command or module in a channel use the commands in the Permissions
+module.
+<br>
+<br>
+If you want to completely prevent the bot from being used in a channel, follow these steps:
+<ol>
+<li>Make sure the bot doesn't have the Administrator permissions in role settings, as this overrides any
+channel permissions.
+</li>
+<li>Go the channel settings for the channel you don't want commands to be used.</li>
+<li>Deny the Send Messages permission for UnbelievaBoat. <i>(see image below)</i></li>
+</ol>
+<br>
+<img src="/media/faq/bot_channel_perms.png" class="img-thumbnail" onclick="window.open(this.src)">
+</div>
+</div>
+<br>
+<div class="card" id="defaults">
+<div class="card-header">
+What are the default settings for the bot?
+</div>
+<div class="card-body">
+<table class="table table-responsive table-bordered">
+<tr>
+<td colspan="4">
+<strong>Currency symbol:</strong> <code>£</code><br>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<strong>Chat money:</strong><br>
+min: <code>5</code><br>
+max: <code>15</code><br>
+cooldown: <code>1 minute</code>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<strong>Game cooldown:</strong><br>
+usages: <code>4</code><br>
+duration: <code>5 minutes</code>
+</td>
+</tr>
+<tr>
+<td>
+<strong>Work:</strong><br>
+payout min: <code>20</code><br>
+payout max: <code>250</code><br>
+cooldown: <code>4 hours</code>
+</td>
+<td>
+<strong>Slut:</strong><br>
+payout min: <code>100</code><br>
+payout max: <code>400</code><br>
+fine min: <code>10%</code><br>
+fine max: <code>20%</code><br>
+fail rate: <code>35%</code><br>
+cooldown: <code>4 hours</code>
+</td>
+<td>
+<strong>Crime:</strong><br>
+payout min: <code>250</code><br>
+payout max: <code>700</code><br>
+fine min: <code>20%</code><br>
+fine max: <code>40%</code><br>
+fail rate: <code>60%</code><br>
+cooldown: <code>4 hours</code>
+</td>
+<td>
+<strong>Rob:</strong><br>
+fine min: <code>same as crime</code><br>
+fine max: <code>same as crime</code><br>
+cooldown: <code>1 day</code>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<br>
+<br>
+</div>
+
+<script>
+
+    function applyTheme(theme) {
+        let light = "/css/light-theme.css";
+        let dark = "/css/dark-theme.css";
+        let moon = "/media/moon.svg";
+        let sun = "/media/sun.svg";
+
+        let cssFile = theme === "dark" ? dark : light;
+        let imageFile = theme === "dark" ? sun : moon;
+
+        let links = document.getElementsByTagName("link");
+        let link;
+        for (let i = 0; i < links.length; i++) {
+
+            if (links[i].id === "theme_stylesheet") {
+                link = links[i];
+                break;
+            }
+
+
+        }
+
+        if (link) {
+            let newLink = document.createElement("link");
+            newLink.setAttribute("rel", "stylesheet");
+            newLink.setAttribute("href", cssFile);
+            newLink.setAttribute("id", "theme_stylesheet");
+
+            switchIcon(imageFile);
+
+            link.parentNode.replaceChild(newLink, link);
+        }
+    }
+
+    function switchIcon(src) {
+        document.getElementById("lightswitch_image").src = src;
+    }
+
+    function switchTheme() {
+        try {
+            if (localStorage && localStorage.getItem("theme")) {
+                if (localStorage.getItem("theme") === "dark") {
+                    applyTheme("light");
+                    localStorage.setItem("theme", "light");
+                    return;
+                }
+            }
+        } catch (e) {
+        }
+
+        applyTheme("dark");
+        try {
+            if (localStorage) {
+                localStorage.setItem("theme", "dark");
+            }
+        } catch (e) {
+        }
+
+    }
+
+    function initiate() {
+        //  Check local storage for a saved theme
+        try {
+            if (localStorage && localStorage.getItem("theme")) {
+                applyTheme(localStorage.getItem("theme"));
+            } else {
+                applyTheme('dark');
+            }
+        } catch (e) {
+        }
+
+        //  Add listener
+        document.getElementById("lightswitch").addEventListener("click", switchTheme);
+    }
+
+    initiate();
+</script>
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5CCNXD"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109024028-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109024028-1');
+</script>
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
