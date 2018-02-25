@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="UnbelievaBoat is a powerful, easy to use Discord Bot!">
+<meta name="keywords" content="discord bot,discord app,unbelievable bot,unbelievaboat, bot, discord, economy, money, unb, unb bot">
+<meta name="author" content="unbelievable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="nOBeKQOr1qBZIDu95DV4IXV5DFBl2w0eFABEOyQrq2s" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/default.css">
+<link rel="stylesheet" href="/css/dark-theme.css" id="theme_stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md fixed-top">
+<a class="navbar-brand" href="/">
+<img src="https://cdn.discordapp.com/avatars/292953664492929025/8951dae4df1ff9771be538065b3ea8ed.png?size&#x3D;128" width="30" height="30" class="d-inline-block align-top" alt="">
+UnbelievaBoat
+</a>
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div id="navbarNavDropdown" class="navbar-collapse collapse">
+<ul class="navbar-nav mr-auto">
+<a class="nav-link" href="/">Home</a>
+<a class="nav-link active" href="/commands">Commands</a>
+<a class="nav-link" href="/tags">Tags</a>
+<a class="nav-link" href="/faq">FAQ</a>
+<a class="nav-link" href="/donate">Donate</a>
+<a class="nav-link" href="/stats">Stats</a>
+</ul>
+<ul class="navbar-nav">
+<a class="nav-link" target="_top" href="/invite">Invite Bot</a>
+<a class="nav-link" target="_parent" href="/support">Support Server</a>
+<a class="nav-link hidden-md-down" id="lightswitch">
+<img src="/media/moon.svg" style="width: 18px;" id="lightswitch_image">
+</a>
+</ul>
+</div>
+</nav>
+<br>
+<br>
+<title>UnbelievaBoat - Commands</title>
+<br>
+<div class="pl-5 pr-5">
+<div class="card">
+<h5 class="card-header">Command Prefix</h5>
+<div class="card-body">
+<p class="card-text">
+Default: <code>!</code> or <code>@mention</code><br>
+Example: <code>!help</code> or <code>@UnbelievaBoat#1046 help</code>
+</p>
+</div>
+</div>
+<br>
+<div class="card">
+<h5 class="card-header">Command Usage Syntax</h5>
+<div class="card-body">
+<code>[]</code> - optional parameter<br>
+<code style="padding-top: 1px"><></code> - required parameter<br>
+<code style="padding-top: 1px">&lt;thing1 | thing2&gt;</code> - select one of these options<br>
+&nbsp;<img class="config-icon" style="width: 17px; padding-top: 4px" src="/media/config-dark.svg">
+&nbsp; - configuration command
+(if these commands are entered without any parameters, it will tell you the current setting)
+<br>
+<br>
+<small>(DO NOT INCLUDE THESE WHEN TYPING THE COMMAND)</small>
+</div>
+</div>
+<br>
+<div class="card" id="accordion" role="tablist" aria-multiselectable="true">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#economy" href="#economy" aria-expanded="false" aria-controls="economy" role="tab" id="headingEconomy">
+<h5 class="mb-0 float-left">
+Economy
+</h5>
+</a>
+<div id="economy" class="collapse" role="tabpanel" aria-labelledby="headingEconomy">
+<div class="card-body">
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-7"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>set-currency &lt;new symbol&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Set the currency symbol to use.</p>
+<p>You can use anything for this, including emojis.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>set-currency $</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>set-starting-balance &lt;amount&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Set bank balance members joining your server start with.</p>
+<p>Set this to 0 if you want to disable it.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>set-starting-balance 200</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>set-interest-rate &lt;rate&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Set the interest rate of the bank. </p>
+<p>Interest is applied to users bank balance every 12 hours. </p>
+<p>Maximum: 15.00% Minimum: -100%</p></blockquote>
+<br>
+<blockquote><p>Example: <code>set-interest-rate 4%</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>lock-channel [channel or all]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage channels or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Lock channels from earning money from chatting. </p>
+<p>If no channel is given, the current channel will be locked.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>lock-channel #general</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>unlock-channel [channel or all]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage channels or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Unlock channels for earning money from chatting. </p>
+<p>If no channel is given, the current channel will be unlocked.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>unlock all</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>chat-cooldown &lt;duration&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Set's the cooldown between messages for earning money.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>chat-cooldown 10 seconds</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>chat-money &lt;min | max&gt; &lt;amount&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Sets the minimum or maximum you could receive for each message sent. </p>
+<p>(This has a cooldown to prevent any spam)</p></blockquote>
+<br>
+<blockquote><p>Example: <code>chat-money min 14</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>add-money [cash | bank] &lt;member&gt; &lt;amount&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Add money to a member's cash or bank balance.</p>
+<p>If the cash or bank argument isn't given, it will be added to the cash part. </p>
+<p>For an infinite amount of money use <code>Infinity</code> (case-sensitive) as the amount.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>add-money unbelievable 350</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>add-money-role [cash | bank] &lt;role&gt; &lt;amount&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Add money to the cash or bank balance of every member in a role.</p>
+<p>Bots are not included.</p>
+<p>If the cash or bank argument isn't given, it will be added to the cash part.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>add-money-role Member 350</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>remove-money [cash | bank] &lt;member&gt; &lt;amount&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Remove money from a member's cash or bank balance.</p>
+<p>If the cash or bank argument isn't given, it will be removed from the cash part. </p>
+<p>For an infinite amount of money use <code>Infinity</code> (case-sensitive) as the amount.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>remove-money unbelievable 280</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>remove-money-role [cash | bank] &lt;role&gt; &lt;amount&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Remove money from the cash of every member in a role.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>remove-money-role Muted 950</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>bank</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Check the total bank balance for the server, and current interest rate.</p>
+<p><strong>Related Commands</strong></p>
+<p><code>withdraw</code> - takes money out of your bank to your cash</p>
+<p><code>deposit</code> - puts money from your cash into your bank</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>deposit &lt;amount or all&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Deposit money to your bank.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>deposit 500</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>withdraw &lt;amount or all&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Withdraw money from your bank.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>withdraw 100</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>give-money &lt;member&gt; &lt;amount&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Give another member your money :)</p></blockquote>
+<br>
+<blockquote><p>Example: <code>give-money unbelievable 480</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>money [member]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Check your balance, or the balance of another member.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>leaderboard [page]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Displays the money leaderboard for the server.</p>
+<p>To remove users from the leaderboard that are no longer in the server, use the <code>clean-leaderboard</code> command.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>clean-leaderboard</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Removes anyone from the leaderboard that are no longer in your server.</p>
+<p>This resets their money to 0, and removes them from the leaderboard.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>reset-money [user]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Reset your money, or another user's money.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>reset-economy</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Resets everyone's balance back to 0.</p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#income" href="#income" aria-expanded="false" aria-controls="income" role="tab" id="headingIncome">
+<h5 class="mb-0 float-left">
+Income
+</h5>
+</a>
+<div id="income" class="collapse" role="tabpanel" aria-labelledby="headingIncome">
+<div class="card-body">
+<span>
+<h5>How to earn money?</h5>
+<ul>
+<li>Contribute to chat in text channels (only in unlocked channels)</li>
+<li>Play games</li>
+<li>Go to work, be a slut, commit a crime, or try to rob another member's cash</li>
+<li>Deposit money to the bank, to earn interest</li>
+</ul>
+</span>
+<br>
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-7"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>role-income [add | remove | list] [&lt;role&gt; &lt;amount&gt; &lt;interval&gt;] [&lt;channel&gt; &lt;message&gt;]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Add, remove, or list the roles to be given income at set intervals. </p>
+<p>See the roles tags at https://unbelievable.pizza/tags for the list of available tags. (For example <code>{role.mention}</code>)</p>
+<p><strong>Adding a role to be given income</strong></p>
+<p>Roles can be given money at the interval you set (for example every 12 hours). If the <code>&lt;channel&gt;</code> and <code>&lt;message&gt;</code> arguments are given, it will be announced in that channel when this happens.</p>
+<p><strong>Removing a role from being given income</strong></p>
+<p>Use the <code>role-income list [page]</code> command to find the ID of the income you want to stop and delete.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>role-income add @VIP 100 12h</code> or <code>role-income add @VIP 100 12h #updates {role.name} just received £100!</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>set-cooldown &lt;command&gt; &lt;cooldown&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Set the cooldown for the <code>work</code>, <code>slut</code>, <code>crime</code> or <code>rob</code> commands.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>set-cooldown work 3m</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>add-reply &lt;command&gt; &lt;reply text&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Add a custom reply for work, slut or crime.</p>
+<p>Put <code>{amount}</code> in place of where you want the amount earned to be.</p>
+<p><code>{amount}</code> is just a placeholder for where the amount will be generated.</p>
+<p>You can change the range using the <code>set-payout</code> command.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>add-reply crime You kidnap a bride and take her hostage for {amount}</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>add-fail-reply &lt;command&gt; &lt;reply text&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Add a custom fail/fine reply for slut or crime.</p>
+<p>Put <code>{amount}</code> in place of where you want the fine amount to be.</p>
+<p><code>{amount}</code> is just a placeholder for where the amount will be generated.</p>
+<p>You can change the fine range using the <code>set-fine-amount</code> command.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>add-fail-reply crime You were caught trying to rob an old lady, and have been given a {amount} fine!</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>default-replies &lt;enable | disable&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+ </td>
+<td class="col-md-7">
+<blockquote><p>Whether to use the default replies to <code>work</code>, <code>slut</code>, and <code>crime</code>.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>default-replies disable</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>delete-reply &lt;ID&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Delete a custom reply you've added for <code>work</code>, <code>slut</code> or <code>crime</code>. </p>
+<p>You can get the ID of the reply using the command <code>export custom replies</code>.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>delete-reply 274</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>set-fine-amount &lt;command&gt; &lt;min | max&gt; &lt;amount&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Sets the minimum or maximum fine amount/percentage for <code>slut</code> or <code>crime</code></p>
+<p>Use the <code>fine-type</code> command to switch between percentage (of networth) or set amounts.</p>
+<p>Make sure the type and range match, to prevent something like a 400% fine.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>set-fine-amount slut max 30%</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>set-payout &lt;command&gt; &lt;min | max&gt; &lt;amount&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Sets the minimum or maximum payout for <code>work</code> or <code>slut</code> or <code>crime</code></p></blockquote>
+<br>
+<blockquote><p>Example: <code>set-payout slut max 240</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>set-fail-rate &lt;command&gt; &lt;percentage&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Sets the fail rate (e.g. 70%) for <code>slut</code> or <code>crime</code>.</p>
+<p>The higher the percentage, the more chance there is for getting fined.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>set-fail-rate crime 60%</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>set-fine-type &lt;amount | percentage&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Sets whether the fine is a percentage or fixed amount.</p>
+<p>The range can be changed using the <code>set-fine-amount</code> command.</p>
+<p>Make sure the type and range match, to prevent something like a 400% fine.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>set-fine-type percentage</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>work</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Work, work, work, work, work. This command has no chance of getting fined.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>slut</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Whip it out, for a bit of quick cash ;)</p>
+<p>(Some of these <em>may</em> be a bit NSFW)</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>crime</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Commit a crime, this has more risk but a higher payout</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>rob &lt;member&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Rob another member's money!</p>
+<p>You can only attempt to rob the <strong>cash</strong> part of their balance.</p>
+<p>Probability (of failing): <code>your networth / (their cash + your networth)</code>.</p>
+<p>The amount you are fined, if unsuccessful, is the same as the <code>crime</code> command.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>rob unbelievable</code></p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#games" href="#games" aria-expanded="false" aria-controls="games" role="tab" id="headingGames">
+<h5 class="mb-0 float-left">
+Games
+</h5>
+</a>
+<div id="games" class="collapse" role="tabpanel" aria-labelledby="headingGames">
+<div class="card-body">
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-7"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>set-game-cooldown &lt;usages&gt; &lt;duration&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Set the cooldown for games. </p>
+<p>The example shown will allow you to play each game 4 times every 5 minutes.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>set-game-cooldown 4 5m</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>blackjack &lt;bet&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Play a game of blackjack for money.</p>
+<p>The aim of blackjack is to beat the dealer's hand, without going over 21.</p>
+<p><code>hit</code> - take another card</p>
+<p><code>stand</code> - hold your cards and end your turn</p>
+<p>~~<code>split</code> - split into two hands, only if you have two of the same card~~</p>
+<p><code>double down</code> - double your bet, and take 1 more card</p></blockquote>
+<br>
+<blockquote><p>Example: <code>blackjack 250</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>roulette &lt;bet&gt; &lt;space&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Start a game of roulette, or place your bet in an existing game.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>roulette 350 odd</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>roulette-info</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Displays information about the roulette</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>cock-fight &lt;bet&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Place your bets, and send your chicken off to fight, and hope it comes back in all pieces.</p>
+<p>The more times your chicken wins, the stronger it gets!</p>
+<p>You can only own 1 chicken at a time.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>cock-fight 250</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>roll [max number or options to choose from]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Roll a dice, or select a random option from the given list.</p>
+<p>Specify how many side the dice has (default 6 sided)</p>
+<p>Or provide a list of things to choose from (separated by a comma)</p></blockquote>
+<br>
+<blockquote><p>Example: <code>roll 6 OR roll pizza, more pizza, pineapple</code></p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#items" href="#items" aria-expanded="false" aria-controls="items" role="tab" id="headingItems">
+<h5 class="mb-0 float-left">
+Items
+</h5>
+</a>
+<div id="items" class="collapse" role="tabpanel" aria-labelledby="headingItems">
+<div class="card-body">
+<span>
+<h5>What could items be used for?</h5>
+<ul>
+<li>Link a role, to allow access to secret channels</li>
+<li>Link a role, to allow purchase of "coloured roles"</li>
+<li>Sell something with a limited amount of time to buy</li>
+<li>Sell something with a limited quantity</li>
+<li>Provide a custom reply when the item is bought, or used</li>
+</ul>
+</span>
+<br>
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-7"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>create-item [item name]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Create an item for your store. </p>
+<p>Use this command without any arguments to be guided through every option, and type <code>cancel</code> at any point to stop.</p>
+<p>Use this command, with the item name, to create a "simple" item you can edit later.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>edit-item &lt;option (see list)&gt; &lt;item name&gt; [new value]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Edit an existing item in the store.</p>
+<p>If the item's name contains spaces, put it inside double quotes "like this".</p>
+<p><strong>Options:</strong></p>
+<p><code>name</code> - item name.</p>
+<p><code>price</code> - item price.</p>
+<p><code>description</code> - item description.</p>
+<p><code>inventory</code> - whether this item shows in your inventory. (yes = show in inventory, no = don't)</p>
+<p><code>role</code> - role you are given when buying (non-inventory item) or using (inventory item) the item. (leave blank to remove)</p>
+<p><code>duration</code> - amount of time the item will stay in the store (e.g. 3 days), enter <code>0</code> for no limit.</p>
+<p><code>stock</code> - amount of stock left, enter <code>Infinity</code> for no limit.</p>
+<p><code>reply</code> - message the bot replies with when the item is "used".</p></blockquote>
+<br>
+<blockquote><p>Example: <code>edit-item description pizza Can't go wrong with pizza</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>delete-item &lt;item name&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Delete an item from the store.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>delete-item pizza</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>store [page]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>View a list of items available to buy in the store.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>store 3</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>inventory [member] [page]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>View yours or somebody else's inventory</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>item-info &lt;item name&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>View the details for an item.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>item-info pizza</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>buy-item [quantity] &lt;item name&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Buy an item from the store. If no quantity is given, you will buy 1.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>buy 10 pizza OR buy pizza</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>sell-item &lt;member&gt; [quantity] &lt;name&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Sell an item in your inventory to another member for money.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>sell-item jake 5 pizza</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>use-item [amount] &lt;item name&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Use an item in your inventory.</p>
+<p>If the item comes with a role, you will be given this role.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>use-item pizza</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>give-item &lt;member&gt; [quantity] &lt;item name&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Give a member an item from the store. </p>
+<p>If no quantity is specified, 1 item will be given.</p>
+<p>Use <code>sell-item</code> to give an item from your own inventory.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>give-item unbelievable 6 pizza</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>take-item &lt;member&gt; [amount] &lt;item name&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Take (remove) an item from a member's inventory.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>take-item unbelievable pizza</code></p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#moderation" href="#moderation" aria-expanded="false" aria-controls="moderation" role="tab" id="headingModeration">
+<h5 class="mb-0 float-left">
+Moderation
+</h5>
+</a>
+<div id="moderation" class="collapse" role="tabpanel" aria-labelledby="headingModeration">
+<div class="card-body">
+<span>
+A history of all moderation commands used on the server are saved.<br>
+You can also keep a log in a separate channel.
+</span>
+<br>
+<br>
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-7"> Description</th>
+ </tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>message-delete-channel &lt;enable | disable&gt; [channel]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage messages, Manage channels or Bot commander role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Logs messages that have been deleted on the server to a channel.</p>
+<p>Bot messages are not logged.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>message-delete-channel enable #message-log</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>mod-log &lt;enable | disable&gt; [channel]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Set the channel to log moderation commands.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>mod-log enable #moderation-log</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>mod-role &lt;enable | disable&gt; [role]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Administrator
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Enable a role to use moderation commands, without needing the discord permissions.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>mod-role enable @Moderators</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>muted-role &lt;create | set&gt; [role]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage roles
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Creates a muted role, or sets an existing role to use.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>muted-role set @Muted</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>warn &lt;member&gt; &lt;reason&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Kick members or Moderator role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Gives member a warning, usually for breaking the rules.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>kick &lt;member&gt; [reason]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Kick members or Moderator role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Kick a user from the server.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>mute &lt;member&gt; [length] [reason]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Kick members or Moderator role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Mutes a member from the server. This prevents them from sending messages.</p>
+<p>If no length is given they will be muted until un-muted.</p>
+<p>Length format examples: <code>1s</code>, <code>1m</code>, <code>1h</code>, <code>1d</code>, <code>1w</code>, <code>1mth</code>, <code>1y</code>.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>mute lizard 5d Too much of a weeb</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>soft-ban &lt;member&gt; [reason]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Kick members or Moderator role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Kicks a user from the server, deleting a day's worth of messages.
+(Specifically, this bans and then immediately un-bans them)</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>ban &lt;user&gt; [days delete] [reason]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Ban members or Moderator role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Bans user and deletes last x days worth of messages.</p>
+<p>If days is not a number, it's treated as the first word of the reason.</p>
+<p>Minimum 0 days, maximum 7. Defaults to 0.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>un-ban &lt;user&gt; [reason]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Ban members or Moderator role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Unbans a user from the server</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>un-mute &lt;member&gt; [reason]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Kick members or Moderator role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Unmute a muted member. This allows them to send messages again.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>view-case &lt;case ID&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>View details of a user's punishment. Don't include the <code>#</code> when specifying the case ID</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>remove-case &lt;case ID&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Kick members or Moderator role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Remove a case id from a user. If this is a ban case, the ban for that user is also removed.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+ <p>
+<code>punishments [user]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Shows information regarding a user's punishments in the server (warn / mute / kick / soft-ban / ban)</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>reason &lt;case ID&gt; &lt;new reason&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Kick members or Moderator role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Edit the reason for an existing punishment.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>reason 25 spam</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>purge &lt;limit&gt; [user | -bots | -users]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage messages or Moderator role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Delete messages. </p>
+<p>The limit is capped at 100. </p>
+<p>If a filter is provided, messages within the limit will be checked against it to find any matches.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>purge 100 OR purge 10 -bots OR purge 50 unbelievable</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>lock-down [channel] [duration]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage channels or Moderator role
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Lock down a channel, to prevent anyone sending messages.
+(Unless they have Administrator permission, or Send Messages is set to Allow in channel permissions for a role they have.)</p>
+<p>If no duration is provided, the channel is locked-down until the command is run again.</p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#reminders" href="#reminders" aria-expanded="false" aria-controls="reminders" role="tab" id="headingReminders">
+<h5 class="mb-0 float-left">
+Reminders
+</h5>
+</a>
+<div id="reminders" class="collapse" role="tabpanel" aria-labelledby="headingReminders">
+<div class="card-body">
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-7"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>remind-me &lt;duration&gt; &lt;description&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Receive a reminder in your DM's after the specified amount of time.</p>
+<p>Ensure you have allowed DM's for server you share with the bot.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>remind-me 10m Eat more pizza</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>list-reminders</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Show a list of your reminders, and when you will next be reminded</p></blockquote>
+</td>
+</tr>
+ <tr class="row">
+<td class="col-md-5">
+<p>
+<code>forget-reminder &lt;id&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Forget a reminder you've set. </p>
+<p>Use <code>list-reminders</code> to show a list of your current reminders to get the ID.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>forget-reminder 3</code></p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#fun" href="#fun" aria-expanded="false" aria-controls="fun" role="tab" id="headingFun">
+<h5 class="mb-0 float-left">
+Fun
+</h5>
+</a>
+<div id="fun" class="collapse" role="tabpanel" aria-labelledby="headingFun">
+<div class="card-body">
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-7"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>dog</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Sends a dog picture</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>cat</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Sends a cat picture</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>never-have-i-ever</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Gives you a "never have I ever" question.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>dad-joke</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Tells a dad joke</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>say [channel mention] &lt;message&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Make the bot send a message in the current channel or a given channel.</p>
+<p>Include <code>{embed}</code> at the end to send the message as an embed.</p>
+<p>See https://unbelievable.pizza/tags for more available tags.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>say hi</code> or <code>say #general hi</code></p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#info" href="#info" aria-expanded="false" aria-controls="info" role="tab" id="headingInfo">
+<h5 class="mb-0 float-left">
+Info
+</h5>
+</a>
+<div id="info" class="collapse" role="tabpanel" aria-labelledby="headingInfo">
+<div class="card-body">
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-7"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>server-info</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Shows various information and data of the server.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>user-info [user]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Shows various information and data on the mentioned user.</p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#roles" href="#roles" aria-expanded="false" aria-controls="roles" role="tab" id="headingRoles">
+<h5 class="mb-0 float-left">
+Roles
+</h5>
+</a>
+<div id="roles" class="collapse" role="tabpanel" aria-labelledby="headingRoles">
+<div class="card-body">
+<span>
+Allow members to self assign themselves roles, or enable auto-roles to be given to new members when they join the server.
+</span>
+<br>
+<br>
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-7"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>auto-role [add | remove] [role]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage roles
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Adds or removes a role to be given to all new members joining the server. (Max. 3)</p>
+<p>If no arguments are given, a list of the current auto roles are shown.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>auto-role add Member</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>self-role [add | remove] [role]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Adds or removes a role as self assignable. </p>
+<p>Roles that are self assignable, any user can assign to themselves.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>self-role add updates</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>join-role &lt;role name&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Give yourself one of the self assignable roles. </p>
+<p>Use the <code>self-roles</code> command to list the roles you can assign yourself.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>join-role updates</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>leave-role &lt;role name&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Remove yourself from one of the self assignable roles. </p>
+<p>Use the <code>self-roles</code> command to list the roles you can assign yourself.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>leave-role updates</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>role-id &lt;role&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Easy and simple way to get the ID of any role.</p></blockquote>
+ </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#serversettings" href="#serversettings" aria-expanded="false" aria-controls="serversettings" role="tab" id="headingServerSettings">
+<h5 class="mb-0 float-left">
+Server Settings
+</h5>
+</a>
+<div id="serversettings" class="collapse" role="tabpanel" aria-labelledby="headingServerSettings">
+<div class="card-body">
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-7"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>bot-commander &lt;enable | disable&gt; [role]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Administrator
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Enable a role to use commands that need require higher permissions, without having those permissions (e.g. Manage Server).</p>
+<p>Moderation commands are excluded from this.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>bot-commander enable @Commanders</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>member-agree &lt;enable | disable&gt; [channel] [role]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Enable this to require new members to type <code>agree</code> in a channel before being given a role.</p>
+<p>This could be used to hide the rest of the server until they type <code>agree</code>.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>member-agree enable #welcome @Member</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>user-join &lt;enable | disable&gt; [channel] [message]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Display a welcome message in a channel when a new user joins the server.</p>
+<p>Include the <code>{embed}</code> tag at the end, if you want the message to be an embed.</p>
+<p>Other Tags: <a href="https://unbelievable.pizza/tags">https://unbelievable.pizza/tags</a></p></blockquote>
+<br>
+<blockquote><p>Example: <code>user-join enable #welcome Welcome {user mention} to {server name}. We now have {member count} members!</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>user-left &lt;enable | disable&gt; [channel] [message]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Display a goodbye message in a channel when a user leaves the server.</p>
+<p>Include the <code>{embed}</code> tag at the end, if you want the message to be an embed.</p>
+<p>Other Tags: <a href="https://unbelievable.pizza/tags">https://unbelievable.pizza/tags</a></p></blockquote>
+<br>
+<blockquote><p>Example: <code>user-leave enable #goodbye Goodbye {user mention}, you will be missed from {server name}. We now have {member count} members!</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>prefix [new prefix]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>View the bot prefix, or change the prefix if you have Manage Server permission.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>prefix !!</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>suggestions &lt;enable | disable&gt; [channel]</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Allow your server members to give their suggestions using the <code>suggest</code> command.</p>
+<p>These will be posted in this channel to be voted on using reactions.</p>
+<p>To give your suggestion for the bot, join the support server and use this command in #bot_commands.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>suggestions enable #suggestions</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>suggest &lt;suggestion&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Add your suggestion to the suggestion channel (if configured using the <code>suggestions</code> command), to be voted on.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>export &lt;option&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Administrator
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Export data for easier configuration.</p>
+<p><strong>Options:</strong>
+<code>money</code>
+<code>custom-replies</code></p></blockquote>
+<br>
+<blockquote><p>Example: <code>export money</code></p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#permissions" href="#permissions" aria-expanded="false" aria-controls="permissions" role="tab" id="headingPermissions">
+<h5 class="mb-0 float-left">
+Permissions
+</h5>
+</a>
+<div id="permissions" class="collapse" role="tabpanel" aria-labelledby="headingPermissions">
+<div class="card-body">
+<br>
+<br>
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-7"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>disable &lt;name&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Disable a command or module. </p>
+<p>This can be overwritten in specific channels using <code>channel-override</code>.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>disable slut</code> or <code>disable command:reminders</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+ <td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>enable &lt;name&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Enable a command or module. </p>
+<p>This can be overwritten in specific channels using <code>channel-override</code>.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>enable slut</code> or <code>enable command:reminders</code> or <code>enable module:economy</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<img class="config-icon" src="/media/config-dark.svg">
+<code>channel-override &lt;deny | delete | allow&gt; &lt;name&gt;</code>
+</p>
+<br><br>
+<p class="permissions">
+Permissions: Manage server
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Explicitly allow or deny a command/module to be run in the current channel.</p>
+<p>This overrides any server disabled modules or commands.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>channel-override allow slut</code> or <code>channel-override allow module:economy</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>test &lt;name&gt; [channel]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Test whether a command or module will work in the current channel, or a given channel.</p>
+<p>If a command and module have the same name, you can specify which using the following format:</p>
+<p><code>command:reminders</code> or <code>module:reminders</code></p></blockquote>
+<br>
+ <blockquote><p>Example: <code>test slut</code> or <code>test command:reminders</code></p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#util" href="#util" aria-expanded="false" aria-controls="util" role="tab" id="headingUtil">
+<h5 class="mb-0 float-left">
+Util
+</h5>
+</a>
+<div id="util" class="collapse" role="tabpanel" aria-labelledby="headingUtil">
+<div class="card-body">
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-5"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>help [command | module]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Get help on using the commands</p></blockquote>
+<br>
+<blockquote><p>Example: <code>help money</code> or <code>help module:reminders</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>invite</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Get an invite link to add this bot to your server.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>discrim [discriminator]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Find users with the same discriminator as you.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>donate</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Provides information on how to donate, and the perks you get.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>verify-donation &lt;paypal transaction id&gt; [user]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Verify a PayPal donation to your Discord account, to receive any perks.</p>
+<p>If you want the perks to apply to a different user, enter their user ID after the transaction ID.</p>
+<p><strong>USE THIS COMMAND IN THE BOT'S DM</strong></p></blockquote>
+<br>
+<blockquote><p>Example: <code>verify-donation 36C38912MN9658832</code></p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+<div class="card">
+<a class="card-header mb-0 float-left" style="color: inherit; text-decoration: inherit;" data-toggle="collapse" data-parent="#accordion" data-target="#music" href="#music" aria-expanded="false" aria-controls="music" role="tab" id="headingUtil">
+<h5 class="mb-0 float-left">
+Music [Donator Bot Only]
+</h5>
+</a>
+<div id="music" class="collapse" role="tabpanel" aria-labelledby="headingMusic">
+<div class="card-body">
+<span>
+Music is only available on the Donator bot. (<a href="/donate">https://unbelievable.pizza/donate</a>)<br>
+Play or stream music from YouTube, Bandcamp, SoundCloud, Twitch, Vimeo, Mixer, or any other music URL.<br>
+Join the <a href="/support">Support Server</a> to try these commands first for free.
+</span>
+<br>
+<br>
+<table class="table table-hover">
+<thead>
+<tr class="row">
+<th class="col-md-5"> Command</th>
+<th class="col-md-5"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>play &lt;song name or url&gt;</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Search for a song to play/stream on YouTube, or play/stream from a url.</p>
+<p>Music providers: YouTube, Bandcamp, SoundCloud, Twitch, Vimeo, Mixer, HTTP</p></blockquote>
+<br>
+<blockquote><p>Example: <code>play Thunder - Imagine Dragons</code> or <code>play https://www.youtube.com/watch?v=ueupsBPNkSc</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>radio [station name]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Stream a radio station to a voice channel. Use this command without arguments to view a list of the current stations.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>radio BBC Radio 1</code></p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>pause</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Pause or resume the song.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>stop</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Stops playing music, and leaves the voice channel</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>queue [page]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>View a list of the queued tracks.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>loop</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Repeat the whole queue.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>clear-queue</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Remove all tracks from the queue.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>now-playing</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Shows the current song playing.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>skip</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Skip to the next song in the queue.</p></blockquote>
+</td>
+</tr>
+<tr class="row">
+<td class="col-md-5">
+<p>
+<code>volume [number]</code>
+</p>
+</td>
+<td class="col-md-7">
+<blockquote><p>Change the volume level to between 0% and 150%.</p></blockquote>
+<br>
+<blockquote><p>Example: <code>volume 50%</code></p></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br>
+</div>
+<br>
+<br>
+<div style="display: table; margin: 0 auto;">
+<small>Some of the games are based off <a href="https://github.com/WeebDev/Commando/blob/master/LICENSE" class="alert-link">this</a> repo by Crawl.
+</small>
+</div>
+
+<script>
+
+    function applyTheme(theme) {
+        let light = "/css/light-theme.css";
+        let dark = "/css/dark-theme.css";
+        let moon = "/media/moon.svg";
+        let sun = "/media/sun.svg";
+
+        let cssFile = theme === "dark" ? dark : light;
+        let imageFile = theme === "dark" ? sun : moon;
+
+        let links = document.getElementsByTagName("link");
+        let link;
+        for (let i = 0; i < links.length; i++) {
+
+            if (links[i].id === "theme_stylesheet") {
+                link = links[i];
+                break;
+            }
+
+
+        }
+
+        if (link) {
+            let newLink = document.createElement("link");
+            newLink.setAttribute("rel", "stylesheet");
+            newLink.setAttribute("href", cssFile);
+            newLink.setAttribute("id", "theme_stylesheet");
+
+            switchIcon(imageFile);
+
+            link.parentNode.replaceChild(newLink, link);
+        }
+    }
+
+    function switchIcon(src) {
+        document.getElementById("lightswitch_image").src = src;
+    }
+
+    function switchTheme() {
+        try {
+            if (localStorage && localStorage.getItem("theme")) {
+                if (localStorage.getItem("theme") === "dark") {
+                    applyTheme("light");
+                    localStorage.setItem("theme", "light");
+                    return;
+                }
+            }
+        } catch (e) {
+        }
+
+        applyTheme("dark");
+        try {
+            if (localStorage) {
+                localStorage.setItem("theme", "dark");
+            }
+        } catch (e) {
+        }
+
+    }
+
+    function initiate() {
+        //  Check local storage for a saved theme
+        try {
+            if (localStorage && localStorage.getItem("theme")) {
+                applyTheme(localStorage.getItem("theme"));
+            } else {
+                applyTheme('dark');
+            }
+        } catch (e) {
+        }
+
+        //  Add listener
+        document.getElementById("lightswitch").addEventListener("click", switchTheme);
+    }
+
+    initiate();
+</script>
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5CCNXD"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109024028-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109024028-1');
+</script>
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
